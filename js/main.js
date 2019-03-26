@@ -96,29 +96,9 @@ function changePosition(link) {
 	var widthSlContent = document.getElementsByClassName("slContent");
 	var positionInfo = widthSlContent[widthSlContent.length - 1].getBoundingClientRect();
 	link.classList.add("active");
-	var sliderLink = link;
+
 	slider[activeLink].classList.add("activeSl");
 	var width = positionInfo.width;
 	var position = ((width + 133) * -activeLink) + "px";
 	wrapper.style.left = position;
-}
-
-
-var transforms = ["transform",
-	"msTransform",
-	"webkitTransform",
-	"mozTransform",
-	"oTransform"
-];
-
-var transformProperty = getSupportedPropertyName(transforms);
-
-// управление вендорными префиксами
-function getSupportedPropertyName(properties) {
-	for (var i = 0; i < properties.length; i++) {
-		if (typeof document.body.style[properties[i]] != "undefined") {
-			return properties[i];
-		}
-	}
-	return null;
 }

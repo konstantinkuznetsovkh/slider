@@ -180,6 +180,37 @@ input:focus::-webkit-input-placeholder {
 	color: #ebedec;
 }
 
+/*@media*/
+
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+
+/*@media end*/
+/* font-family: 'Lora', serif; */
+/* regular 400
+regular 400 Italic
+bold 700
+bold 700 Italic */
+/* font-family: 'Montserrat', sans-serif; */
+/* regular 400
+regular 400 Italic
+medium 500
+medium 500 Italic
+bold 700
+bold 700 Italic */
 /* wrapper */
 #wrapper {
 	display: block;
@@ -231,6 +262,7 @@ main {
 	width: 9999px;
 	transform: translate3d(0, 0, 0);
 	transition: transform 1s ease-in-out;
+	transition: left 1s ease-in-out;
 	/*  */
 }
 .slider .center a.left,.center a.right {
@@ -483,7 +515,31 @@ header {
 	position: relative;
 }
 
+header .logo {
+	text-align: center;
+	margin: 11px;
+}
 
+header .logo h1 a {
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 11px;
+	color: #00774f;
+	font-size: 18px;
+	height: 40px;
+}
+
+header .logo h1 a:hover {
+	border-bottom: solid 1px #000;
+}
+
+header .logo h1 a:active {
+	color: rgba(9, 165, 114, 0.1);
+}
+
+header .logo h1 a:focus {
+	text-shadow: 5px -5px 2px rgba(9, 165, 114, 0.57);
+}
 
 /****************************************************************              PC              ***************************************************/
 @media (min-width: 978px) and (max-width: 1217px) {}

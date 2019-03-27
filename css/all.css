@@ -684,10 +684,12 @@ header .logo h1 a:focus {
 		width: 100%;
 		z-index: 2;
 	}
+
 	.center_middle .text .direction a {
 		padding-left: 6px;
 		width: 174px;
 	}
+
 	.empty {
 		display: -webkit-box;
 		display: -ms-flexbox;

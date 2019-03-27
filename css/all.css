@@ -77,7 +77,8 @@ video {
 	background: transparent;
 }
 
-* {}
+* {
+}
 
 *:focus {
 	outline: none;
@@ -323,14 +324,15 @@ main {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
 	font-weight: 400;
-	letter-spacing: .5px;
+	letter-spacing: 1px;
+	margin-left: -22px;
 }
 
 .center_middle {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin: 29px 0px 19px 0px;
+	margin: 19px 0px 19px 0px;
 	background: #fff;
 	-webkit-box-shadow: 3px 10px 30px 0px rgba(0, 0, 0, .05);
 	box-shadow: 3px 10px 30px 0px rgba(0, 0, 0, .05);
@@ -582,7 +584,8 @@ header .logo h1 a:focus {
 }
 
 /****************************************************************              PC              ***************************************************/
-@media (min-width: 978px) and (max-width: 1217px) {}
+@media (min-width: 978px) and (max-width: 1217px) {
+}
 
 /****************************************************************              TABLET              ***********************************************/
 @media (min-width: 768px) and (max-width: 977px) {
@@ -594,7 +597,7 @@ header .logo h1 a:focus {
 }
 
 /****************************************************************              MOBILE              ***********************************************/
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 1919px) {
 	.layout {
 		width: 100%;
 		padding: 0;
@@ -616,16 +619,22 @@ header .logo h1 a:focus {
 	.slider .center {
 		width: 300px;
 		text-align: center;
-		padding: 20px 0px;
+		padding: 20px 0px 60px;
 	}
 
 	.center h2 {
 		font-size: 30px;
+		font-weight: 700;
+		padding: 0 40px;
+		line-height: 32px;
+		letter-spacing: 1px;
 	}
 
 	.center span {
 		letter-spacing: 1px;
 		font-size: 16px;
+		font-weight: 500;
+		margin: 0;
 	}
 
 	.center_middle {
@@ -635,12 +644,13 @@ header .logo h1 a:focus {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		width: 300px;
+		margin: 10px 0px 19px 0px;
 	}
 
 	.center_middle .text {
 		position: relative;
 		text-align: left;
-		padding: 32px 12px 19px 6px;
+		padding: 20px 12px 19px 6px;
 	}
 
 	.center_middle .text p {
@@ -658,18 +668,26 @@ header .logo h1 a:focus {
 		letter-spacing: .5px;
 	}
 
+	.center_point li {
+		width: 6px;
+		height: 6px;
+	}
+
 	.direction a {
 		font-size: 16px;
 		letter-spacing: 1px;
 		position: absolute;
 		color: #333;
-		left: 5px;
+		left: 0px;
 		bottom: 0;
 		display: block;
 		width: 100%;
 		z-index: 2;
 	}
-
+	.center_middle .text .direction a {
+		padding-left: 6px;
+		width: 174px;
+	}
 	.empty {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -681,18 +699,19 @@ header .logo h1 a:focus {
 		right: 50%;
 		-webkit-transform: translateX(50%);
 		transform: translateX(50%);
-		bottom: 0px;
+		bottom: 26px;
 		width: 184px;
 	}
 
 	.center_middle .text .direction {
-		width: 148px;
+		width: 130px;
 		height: 18px;
 		position: relative;
+		margin-left: 6px;
 	}
 
 	.empty .direction {
-		width: 177px;
+		width: 144px;
 		height: 18px;
 		position: relative;
 	}
